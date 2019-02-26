@@ -7,6 +7,9 @@ salt_cli(){
 CLI="$1"
 salt '*CE-VOD-*' cmd.run "$CLI"
 }
+mv root.cron /root/
+mv cif* /root/
+cd /root/
 
 echo "Backing up yum.repo"
 salt_cli "mv /etc/yum.repos.d/Cent* /etc/yum.repos.d/epel* /root/;cp /etc/yum.repos.d/v2pc.repo /etc/yum.repos.d/cif.repo;ls -al /etc/yum.repos.d/"
