@@ -10,6 +10,11 @@ Workaround to support CIFS in VOD workflow.
    c. cif-utils
 3. Deploy services.
 
+REQUIREMENTS:
+------------
++ Copy file cifcomplete.tgz on the site.
+
+
 PREWORK:
 -----
  Create workflow with the mediasource NFS server as 127.0.0.1 NFS v.3 with /nfsshare.
