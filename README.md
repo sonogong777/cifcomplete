@@ -2,6 +2,8 @@
 #
 #
 
+![CIFS diagram](diagrm.png)
+
 Workaround to support CIFS in VOD workflow.
 1. Post cif yum repo on v2pc repo
 2. Install required packages on the packagers
