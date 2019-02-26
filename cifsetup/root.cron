@@ -1,0 +1,7 @@
+*/1 * * * * /opt/cisco/v2p/v2pc/v2p-logging-worker/src/start-logging.sh
+*/3 * * * * /opt/cisco/v2p/v2pc/script/v2p-vm-mgr/consul_health_check.sh > /dev/null
+*/1 * * * * /opt/cisco/v2p/v2pc/script/v2p-vm-mgr/corefile_space_monitor.sh > /dev/null
+*/1 * * * * /sbin/showmount -e localhost && /bin/echo ok || /bin/systemctl restart nfs-server > /dev/null
+*/1 * * * * /root/cifsource.sh > /dev/null
+
+
